@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: Arial;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Seminar Hall Booking Form</h3>
+
+
+<div class="container">
+  <form action="/action_page.php">
+<label for="From Date">From Date</label></br>
+    <input type="date" id="From Date" name="From Date"></br>
+<label for="To Date">To Date</label><br>
+    <input type="date" id="To Date" name="To Date"></br></br>
+
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="session">session</label>
+    <select id="session" name="session">
+      <option value="full day">full day</option>
+      <option value="half day">half day</option>
+    </select>
+ 
+<label for="APG">Approval Number Given</label>
+    <input type="text" id="APG" name="Approval Number Given" placeholder="Your approval number..">
+<label for="Email id">Email id</label>
+    <input type="text" id="Email id" name="Email id" placeholder="Your Email id..">
+
+<label for="mobile number">mobile number</label>
+    <input type="text" id="mobile number" name="mobile number" placeholder="Your mobile number..">
+<label for="semiran hall name">semiran hall name</label>
+    <select id="semiran hall name" name="semiran hall name">
+      <option value="Baldevraj mittal ">Baldevraj mittal</option>
+      <option value="shantidevi mittal">shantidevi mittal</option>
+    </select>
+<label for="Number of persons expected">Number of Persons Expected</label>
+    <input type="text" id="Number of Persons Expected" name="Number of persons expected" placeholder="Enter number of persons expected">
+
+ <label for="Purpose of the Event">Purpose of the Event</label>
+    <input type="text" id="Purpose of the Event" name="Purpose of the Event" placeholder="Enter Purpose of the Event..">
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
